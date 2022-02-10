@@ -1,0 +1,156 @@
+!------------------------------------------------------------------
+!    DAYCLI BUFR SEQUENCE 
+! See at https://github.com/wmo-im/BUFR4/issues/51
+!
+!---------------------------------------------------------------------
+&SECTION1
+CENTER=85           !<-Identification of Originating/Generating center (See commom code table C1 and C11 )
+SUBCENTER=-99999999 !<-Sub-center of generating center (See common code C12)
+/
+! Note:  255 or -99999999   <- Missing value 
+
+!-------------------------
+! Location identification 
+!-----------------------
+&STATION_ID
+LATITUDE=-66.66317
+LONGITUDE=140.00100
+WIGOS='0-20000-0-89642'
+WMO=89642
+HTEMP=2                   !HEIGHT OF TEMPERATURE SENSOR
+HA=43                     !HEIGHT OF STATION GROUND ABOVE MEAN SEA LEVEL
+SMC_TEMP=7      !SITING AND MEASUREMENT QUALITY CLASSFICATION FOR TEMPERATURE 
+SMC_PREC=255    !SITING AND MEASUREMENT QUALITY CLASSIFICATION FOR PRECIPITAION (CCITTIA5)
+
+
+!---------------------------------------------------------------------------------------
+! Computation method for the average of temperature 
+!
+!Code Figure 	--
+! 0      	Average of maximum and minimum values: Tm = ( Tx + Tn) / 2 (see Note 1)
+! 1 	        Average of the 8 tri-hourly observation
+! 2 	        Average of 24 hourly observation
+! 3 	        Weighted average of 3 observations: Tm = (aT1 +bT2 + cT3) (see Note 1)
+! 4 	        Weighted average of 3 observation and also maximum and minimum values: 
+!               Tm= (aT1 +bT2 + cT3 +dTx + eTn) (see Note 1)
+! 5 	        AWS complete integration from minute data
+! 6 - 254 	  Reserved
+! 255  or -99999999	  Missing value
+!----------------------------------------------------------------------------------------
+METHOD_TM=2   !Computation Method for the average of temperature
+/
+
+
+!---------------------------------------------------------------------------------------
+!  Beginning time of the period for each parameter (HOUR,MINUTE,SECOND)
+!  and Time displacement in days since reference date:
+!  DT =  0 (when beginning time of the period is on the same day) 
+!  DT = -1 (previous day)
+!
+!  All date (DT,HOUR,MINUTE,SECOND) shall be expressed in UTC
+!  Where an UTC day is defined as:
+!  from 00:00 to 23:59 UTC
+!----------------------------------------------------------------------------------------
+! *** Maximum temperature ***
+&STIME_TX
+HOUR=21  
+MINUTE=00 
+SECOND=01  
+DT=-1      
+/
+
+! *** Minimum temperature ***
+&STIME_TN
+HOUR=09        
+MINUTE=00
+SECOND=01      
+DT=-1          
+/
+
+! *** Meam temperature ***
+&STIME_TM
+HOUR=15       
+MINUTE=00
+SECOND=01      
+DT=-1     
+/
+
+! *** Total Acumulate precipitation (RR) ***
+&STIME_RR
+HOUR=21        
+MINUTE=00      
+SECOND=01      
+DT=-1
+/
+
+! *** fresh snow (DS) ***
+&STIME_DS
+HOUR=21 
+MINUTE=00
+SECOND=01 
+DT=-1     
+/
+
+! *** total snow deph (TSD) ***
+&STIME_TSD
+HOUR=21  
+MINUTE=00
+SECOND=00
+DT=-1     ! Instantaneous measurement DT=0 bydefaut
+/
+!------------------------------------------------
+! Data Quality Flag
+! For each of the parameter (qrr, qds, qtsd, qtn, qtx, qtm)
+! rr  : Total accumulated precipitation
+! ds  : depth of fresh snow
+! tsd : Total snow depth
+! tn  : Minimum temperature
+! tx  : Maximum temperature
+! tm  : Mean temperature
+!
+! Note: Quality Control Table 
+!0 Data checked and declared good
+!1 Data checked and declared suspect
+!2 Data checked and declared aggregated
+!3 Data checked and declared out of instrument range 
+!4 Data checked and declared aggregated and out of instrument range 
+!5 Parameter is not measured at the station 
+!6 Daily value not provided 
+!7 Data unchecked 
+!255 or -99999999 Missing (QC info not available)
+!-----------------------------------------------------------------------
+
+&DATA_SECTION
+!   date   ,  rr  , qrr , ds , qds , tsd , qtsd ,   tn   , qtn ,   tx   , qtx ,   tm   , qtm
+  20211001 ,    ,   6 ,    ,   6 ,     ,    6 , 252.45 ,   0 , 261.35 ,   0 , 255.95 ,   0
+  20211002 ,    ,   6 ,    ,   6 ,     ,    6 , 252.75 ,   0 , 268.65 ,   0 , 261.65 ,   0
+  20211003 ,    ,   6 ,    ,   6 ,     ,    6 , 263.35 ,   0 , 270.35 ,   0 , 266.75 ,   0
+  20211004 ,    ,   6 ,    ,   6 ,     ,    6 , 265.15 ,   0 , 270.85 ,   0 , 267.85 ,   0
+  20211005 ,    ,   6 ,    ,   6 ,     ,    6 , 265.85 ,   0 , 268.55 ,   0 , 266.85 ,   0
+  20211006 ,    ,   6 ,    ,   6 ,     ,    6 , 264.85 ,   0 , 268.35 ,   0 , 266.45 ,   0
+  20211007 ,    ,   6 ,    ,   6 ,     ,    6 , 261.95 ,   0 , 266.45 ,   0 , 263.95 ,   0
+  20211008 ,    ,   6 ,    ,   6 ,     ,    6 , 261.45 ,   0 , 264.65 ,   0 , 263.45 ,   0
+  20211009 ,    ,   6 ,    ,   6 ,     ,    6 , 263.35 ,   0 , 264.45 ,   0 , 263.75 ,   0
+  20211010 ,    ,   6 ,    ,   6 ,     ,    6 , 260.45 ,   0 , 266.35 ,   0 , 262.45 ,   0
+  20211011 ,    ,   6 ,    ,   6 ,     ,    6 , 259.35 ,   0 , 264.15 ,   0 , 262.45 ,   0
+  20211012 ,    ,   6 ,    ,   6 ,     ,    6 , 261.95 ,   0 , 267.75 ,   0 , 264.05 ,   0
+  20211013 ,    ,   6 ,    ,   6 ,     ,    6 , 261.85 ,   0 , 269.25 ,   0 , 264.55 ,   0
+  20211014 ,    ,   6 ,    ,   6 ,     ,    6 , 261.95 ,   0 , 265.65 ,   0 , 262.35 ,   0
+  20211015 ,    ,   6 ,    ,   6 ,     ,    6 , 255.25 ,   0 , 262.05 ,   0 , 257.05 ,   0
+  20211016 ,    ,   6 ,    ,   6 ,     ,    6 , 253.05 ,   0 , 256.35 ,   0 , 254.95 ,   0
+  20211017 ,    ,   6 ,    ,   6 ,     ,    6 , 252.95 ,   0 , 261.45 ,   0 , 256.75 ,   0
+  20211018 ,    ,   6 ,    ,   6 ,     ,    6 , 253.35 ,   0 , 262.05 ,   0 , 257.25 ,   0
+  20211019 ,    ,   6 ,    ,   6 ,     ,    6 , 255.05 ,   0 , 267.95 ,   0 , 262.75 ,   0
+  20211020 ,    ,   6 ,    ,   6 ,     ,    6 , 262.75 ,   0 , 268.35 ,   0 , 263.95 ,   0
+  20211021 ,    ,   6 ,    ,   6 ,     ,    6 , 262.95 ,   0 , 269.05 ,   0 , 267.75 ,   0
+  20211022 ,    ,   6 ,    ,   6 ,     ,    6 , 266.45 ,   0 , 269.25 ,   0 , 266.95 ,   0
+  20211023 ,    ,   6 ,    ,   6 ,     ,    6 , 260.15 ,   0 , 270.35 ,   0 , 264.95 ,   0
+  20211024 ,    ,   6 ,    ,   6 ,     ,    6 , 258.85 ,   0 , 269.25 ,   0 , 263.45 ,   0
+  20211025 ,    ,   6 ,    ,   6 ,     ,    6 , 260.85 ,   0 , 268.55 ,   0 , 263.05 ,   0
+  20211026 ,    ,   6 ,    ,   6 ,     ,    6 , 254.95 ,   0 , 264.35 ,   0 , 259.45 ,   0
+  20211027 ,    ,   6 ,    ,   6 ,     ,    6 , 253.85 ,   0 , 265.35 ,   0 , 260.15 ,   0
+  20211028 ,    ,   6 ,    ,   6 ,     ,    6 , 258.15 ,   0 , 265.15 ,   0 , 260.45 ,   0
+  20211029 ,    ,   6 ,    ,   6 ,     ,    6 , 255.25 ,   0 , 263.15 ,   0 , 259.65 ,   0
+  20211030 ,    ,   6 ,    ,   6 ,     ,    6 , 260.05 ,   0 , 263.15 ,   0 , 261.35 ,   0
+  20211031 ,    ,   6 ,    ,   6 ,     ,    6 , 261.95 ,   0 , 265.95 ,   0 , 263.55 ,   0
+/
