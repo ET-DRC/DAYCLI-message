@@ -1,0 +1,153 @@
+!------------------------------------------------------------------                                       
+!    DAYCLI BUFR SEQUENCE                                                                                 
+! See at https://github.com/wmo-im/BUFR4/issues/51                                                        
+!                                                                                                         
+!---------------------------------------------------------------------                                    
+&SECTION1                                                                                                 
+CENTER=08           !<-Identification of Originating/Generating center (See commom code table C1 and C11 )
+SUBCENTER=-99999999 !<-Sub-center of generating center (See common code C12)                              
+/                                                                                                         
+! Note:  255 or -99999999   <- Missing value                                                              
+                                                                                                          
+!-------------------------                                                                                
+! Location identification                                                                                 
+!-----------------------                                                                                  
+&STATION_ID                                                                                               
+LATITUDE=   33.940                                                                                        
+LONGITUDE  -118.393                                                                                       
+WIGOS='0-20000-0-72295'                                                                                   
+WMO=72295                                                                                                 
+HTEMP=2                   !HEIGHT OF TEMPERATURE SENSOR                                                   
+HA=00030                  !HEIGHT OF STATION GROUND ABOVE MEAN SEA LEVEL                                  
+SMC_TEMP=255  !SITING AND MEASUREMENT QUALITY CLASSFICATION FOR TEMPERATURE                               
+SMC_PREC=255  !SITING AND MEASUREMENT QUALITY CLASSIFICATION FOR PRECIPITAION (CCITTIA5)                  
+                                                                                                          
+!---------------------------------------------------------------------------------------                  
+! Computation method for the average of temperature                                                       
+!                                                                                                         
+!Code Figure 	--                                                                                          
+! 0      	Average of maximum and minimum values: Tm = ( Tx + Tn) / 2 (see Note 1)                         
+! 1 	        Average of the 8 tri-hourly observation                                                      
+! 2 	        Average of 24 hourly observation                                                             
+! 3 	        Weighted average of 3 observations: Tm = (aT1 +bT2 + cT3) (see Note 1)                       
+! 4 	        Weighted average of 3 observation and also maximum and minimum values:                       
+!               Tm= (aT1 +bT2 + cT3 +dTx + eTn) (see Note 1)                                              
+! 5 	        AWS complete integration from minute data                                                    
+! 6 - 254 	  Reserved                                                                                     
+! 255  or -99999999	  Missing value                                                                       
+!----------------------------------------------------------------------------------------                 
+METHOD_TM=2   !Computation Method for the average of temperature                                          
+/                                                                                                         
+                                                                                                          
+                                                                                                          
+!---------------------------------------------------------------------------------------                  
+!  Beginning time of the period for each parameter (HOUR,MINUTE,SECOND)                                   
+!  and Time displacement in days since reference date:                                                    
+!  DT =  0 (when beginning time of the period is on the same day)                                         
+!  DT = -1 (previous day)                                                                                 
+!                                                                                                         
+!  All date (DT,HOUR,MINUTE,SECOND) shall be expressed in UTC                                             
+!  Where an UTC day is defined as:                                                                        
+!  from 00:00 to 23:59 UTC                                                                                
+!----------------------------------------------------------------------------------------                 
+! *** Maximum temperature ***                                                                             
+&STIME_TX                                                                                                 
+HOUR=08                                                                                                   
+MINUTE=00                                                                                                 
+SECOND=01                                                                                                 
+DT=0                                                                                                      
+/                                                                                                         
+                                                                                                          
+! *** Minimum temperature ***                                                                             
+&STIME_TN                                                                                                 
+HOUR=08                                                                                                   
+MINUTE=00                                                                                                 
+SECOND=01                                                                                                 
+DT=0                                                                                                      
+/                                                                                                         
+                                                                                                          
+! *** Meam temperature ***                                                                                
+&STIME_TM                                                                                                 
+HOUR=00                                                                                                   
+MINUTE=00                                                                                                 
+SECOND=01                                                                                                 
+DT=0                                                                                                      
+/                                                                                                         
+                                                                                                          
+! *** Total Acumulate precipitation (RR) ***                                                              
+&STIME_RR                                                                                                 
+HOUR=08                                                                                                   
+MINUTE=00                                                                                                 
+SECOND=01                                                                                                 
+DT=0                                                                                                      
+/                                                                                                         
+                                                                                                          
+! *** fresh snow (DS) ***                                                                                 
+&STIME_DS                                                                                                 
+HOUR=08                                                                                                   
+MINUTE=00                                                                                                 
+SECOND=01                                                                                                 
+DT=0                                                                                                      
+/                                                                                                         
+                                                                                                          
+! *** total snow deph (TSD) ***                                                                           
+&STIME_TSD                                                                                                
+HOUR=12                                                                                                   
+MINUTE=00                                                                                                 
+SECOND=00                                                                                                 
+DT=0     ! Instantaneous measurement DT=0 bydefaut                                                        
+/                                                                                                         
+!------------------------------------------------                                                         
+! Data Quality Flag                                                                                       
+! For each of the parameter (qrr, qds, qtsd, qtn, qtx, qtm)                                               
+! rr  : Total accumulated precipitation                                                                   
+! ds  : depth of fresh snow                                                                               
+! tsd : Total snow depth                                                                                  
+! tn  : Minimum temperature                                                                               
+! tx  : Maximum temperature                                                                               
+! tm  : Mean temperature                                                                                  
+!                                                                                                         
+! Note: Quality Control Table                                                                             
+!0 Data checked and declared good                                                                         
+!1 Data checked and declared suspect                                                                      
+!2 Data checked and declared aggregated                                                                   
+!3 Data checked and declared out of instrument range                                                      
+!4 Data checked and declared aggregated and out of instrument range                                       
+!5 Parameter is not measured at the station                                                               
+!6 Daily value not provided                                                                               
+!7 Data unchecked                                                                                         
+!255 or -99999999 Missing (QC info not available)                                                         
+!-----------------------------------------------------------------------                                  
+                                                                                                          
+&DATA_SECTION                                                                                             
+  date  ,  rr,  qrr , ds , qds , tsd  ,  qtsd , tn , qtn , tx  , qtx , tm , qtm 
+20211101,    0.0,0,       ,6,       ,6,  284.85,0,  292.05,0,  288.15,0
+20211102,       ,6,       ,6,       ,6,  284.85,0,  291.45,0,  288.65,0
+20211103,       ,6,       ,6,       ,6,  286.45,0,  291.45,0,  288.95,0
+20211104,       ,6,       ,6,       ,6,  287.55,0,  291.45,0,  288.55,0
+20211105,       ,6,       ,6,       ,6,        ,6,        ,6,  287.95,0
+20211106,       ,6,       ,6,       ,6,  286.45,0,  292.05,0,  288.05,0
+20211107,       ,6,       ,6,       ,6,  286.45,0,  289.85,0,  287.75,0
+20211108,       ,6,       ,6,       ,6,        ,6,        ,6,  288.65,0
+20211109,       ,6,       ,6,       ,6,  286.45,0,  293.15,0,  289.05,0
+20211110,       ,6,       ,6,       ,6,  286.45,0,  294.85,0,  289.95,0
+20211111,       ,6,       ,6,       ,6,  287.05,0,  302.05,0,  293.25,0
+20211112,       ,6,       ,6,       ,6,  287.05,0,  305.95,0,  297.25,0
+20211113,       ,6,       ,6,       ,6,  289.85,0,  305.95,0,  298.05,0
+20211114,       ,6,       ,6,       ,6,  288.15,0,  305.95,0,  294.75,0
+20211115,       ,6,       ,6,       ,6,  287.05,0,  303.15,0,  292.05,0
+20211116,       ,6,       ,6,       ,6,  287.05,0,  297.55,0,  288.15,0
+20211117,       ,6,       ,6,       ,6,  286.45,0,  292.05,0,  288.45,0
+20211118,       ,6,       ,6,       ,6,  284.85,0,  292.05,0,  287.95,0
+20211119,       ,6,       ,6,       ,6,  284.85,0,  291.45,0,  288.45,0
+20211120,       ,6,       ,6,       ,6,  287.05,0,  291.45,0,  287.95,0
+20211121,       ,6,       ,6,       ,6,  283.75,0,  304.25,0,  291.05,0
+20211122,       ,6,       ,6,       ,6,  283.75,0,  304.25,0,  295.85,0
+20211123,       ,6,       ,6,       ,6,  287.05,0,  302.55,0,  292.55,0
+20211124,       ,6,       ,6,       ,6,  285.35,0,  294.85,0,  289.45,0
+20211125,       ,6,       ,6,       ,6,  283.75,0,  298.15,0,  291.25,0
+20211126,       ,6,       ,6,       ,6,  283.75,0,  298.15,0,  290.85,0
+20211127,       ,6,       ,6,       ,6,  283.15,0,  298.75,0,  290.45,0
+20211128,       ,6,       ,6,       ,6,  283.15,0,  298.75,0,  289.05,0
+20211129,       ,6,       ,6,       ,6,  283.15,0,  295.95,0,  289.05,0
+20211130,       ,6,       ,6,       ,6,  284.85,0,  295.95,0,  287.65,0
