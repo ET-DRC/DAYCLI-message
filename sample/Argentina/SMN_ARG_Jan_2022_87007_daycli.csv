@@ -1,0 +1,158 @@
+!------------------------------------------------------------------
+!    DAYCLI BUFR SEQUENCE 
+! See at https://github.com/wmo-im/BUFR4/issues/51
+!
+!---------------------------------------------------------------------
+&SECTION1
+CENTER=41           !<-Identification of Originating/Generating center (See commom code table C1 and C11 )
+SUBCENTER=-99999999 !<-Sub-center of generating center (See common code C12)
+/
+! Note:  255 or -99999999   <- Missing value 
+
+!-------------------------
+! Location identification 
+!-----------------------
+&STATION_ID
+LATITUDE=-22.10343
+LONGITUDE= -65.60071
+WIGOS='0-20000-0-87007'
+WMO=87007
+HTEMP=1.5                   !HEIGHT OF TEMPERATURE SENSOR
+HA=3459                     !HEIGHT OF STATION GROUND ABOVE MEAN SEA LEVEL
+SMC_TEMP=-99999999   !SITING AND MEASUREMENT QUALITY CLASSFICATION FOR TEMPERATURE 
+SMC_PREC=-99999999   !SITING AND MEASUREMENT QUALITY CLASSIFICATION FOR PRECIPITAION (CCITTIA5)
+
+
+!---------------------------------------------------------------------------------------
+! Computation method for the average of temperature 
+!
+!Code Figure 	--
+! 0      	Average of maximum and minimum values: Tm = ( Tx + Tn) / 2 (see Note 1)
+! 1 	        Average of the 8 tri-hourly observation
+! 2 	        Average of 24 hourly observation
+! 3 	        Weighted average of 3 observations: Tm = (aT1 +bT2 + cT3) (see Note 1)
+! 4 	        Weighted average of 3 observation and also maximum and minimum values: 
+!               Tm= (aT1 +bT2 + cT3 +dTx + eTn) (see Note 1)
+! 5 	        AWS complete integration from minute data
+! 6 - 254 	  Reserved
+! 255  or -99999999	  Missing value
+!----------------------------------------------------------------------------------------
+METHOD_TM=3  !Computation Method for the average of temperature
+/
+
+
+!---------------------------------------------------------------------------------------
+!  Beginning time of the period for each parameter (HOUR,MINUTE,SECOND)
+!  and Time displacement in days since reference date:
+!  DT =  0 (when beginning time of the period is on the same day) 
+!  DT = -1 (previous day)
+!
+!  All date (DT,HOUR,MINUTE,SECOND) shall be expressed in UTC
+!  Where an UTC day is defined as:
+!  from 00:00 to 23:59 UTC
+!----------------------------------------------------------------------------------------
+ 
+! *** Maximum temperature ***
+&STIME_TX
+HOUR=24
+MINUTE=00 
+SECOND=00  
+DT=0      
+/
+
+! *** Minimum temperature ***
+&STIME_TN
+HOUR=24       
+MINUTE=00
+SECOND=00      
+DT=0          
+/
+
+! *** Meam temperature ***
+&STIME_TM
+HOUR=24       
+MINUTE=00
+SECOND=00      
+DT=0     
+/
+
+! *** Total Acumulate precipitation (RR) ***
+&STIME_RR
+HOUR=12        
+MINUTE=00      
+SECOND=00      
+DT=-1
+/
+
+! *** fresh snow (DS) ***
+&STIME_DS
+HOUR=12 
+MINUTE=00
+SECOND=00 
+DT=-1     
+/
+
+! *** total snow deph (TSD) ***
+&STIME_TSD
+HOUR=12  
+MINUTE=00
+SECOND=00
+DT=-1     ! Instantaneous measurement DT=0 bydefaut
+/
+!------------------------------------------------
+! Data Quality Flag
+! For each of the parameter (qrr, qds, qtsd, qtn, qtx, qtm)
+! rr  : Total accumulated precipitation
+! ds  : depth of fresh snow
+! tsd : Total snow depth
+! tn  : Minimum temperature
+! tx  : Maximum temperature
+! tm  : Mean temperature
+!
+! Note: Quality Control Table 
+!0 Data checked and declared good
+!1 Data checked and declared suspect
+!2 Data checked and declared aggregated
+!3 Data checked and declared out of instrument range 
+!4 Data checked and declared aggregated and out of instrument range 
+!5 Parameter is not measured at the station 
+!6 Daily value not provided 
+!7 Data unchecked 
+!255 or -99999999 Missing (QC info not available)
+!-----------------------------------------------------------------------
+
+&DATA_SECTION
+! date,rr,qrr,ds,qds,tsd,qtsd,tn,qtn,tx,qtx,tm,qtm
+20220101,0,0,0,0,,6,280.9,0,297.7,0,289.8,0
+20220102,0,0,0,0,,6,281.5,0,298.4,0,290.2,0
+20220103,0,0,0,0,,6,282.6,0,296,0,288.8,0
+20220104,-0.1,0,0,0,,6,281.5,0,296.2,0,287.6,0
+20220105,0,0,0,0,,6,283.1,0,292.7,0,286.5,0
+20220106,0,0,0,0,,6,281.8,0,295.2,0,286.1,0
+20220107,0,0,0,0,,6,282.5,0,296.3,0,287.4,0
+20220108,0.3,0,0,0,,6,283.4,0,291.2,0,285.9,0
+20220109,1,0,0,0,,6,281.6,0,294.2,0,286.5,0
+20220110,0,0,0,0,,6,281.6,0,295.9,0,286.8,0
+20220111,0,0,0,0,,6,283.4,0,294.2,0,287.1,0
+20220112,0,0,0,0,,6,281.1,0,292.7,0,286.8,0
+20220113,0,0,0,0,,6,277.9,0,293.7,0,285.9,0
+20220114,0,0,0,0,,6,278.7,0,292.1,0,285.1,0
+20220115,-0.1,0,0,0,,6,280.6,0,295.2,0,285.6,0
+20220116,4.5,0,0,0,,6,281,0,295.2,0,286.3,0
+20220117,13.5,0,0,0,,6,279.2,0,294.2,0,286,0
+20220118,3.5,0,0,0,,6,281.8,0,292,0,285.6,0
+20220119,3,0,0,0,,6,280.6,0,290.9,0,284.9,0
+20220120,0,0,0,0,,6,282.2,0,291.5,0,285.8,0
+20220121,14,0,0,0,,6,280.4,0,292.7,0,285.9,0
+20220122,0,0,0,0,,6,281.4,0,297.2,0,286.1,0
+20220123,0,0,0,0,,6,281.2,0,292.6,0,285.1,0
+20220124,5,0,0,0,,6,281.6,0,291,0,284.7,0
+20220125,27.6,0,0,0,,6,281.6,0,291.7,0,285.2,0
+20220126,11,0,0,0,,6,281.6,0,292.7,0,285.8,0
+20220127,12,0,0,0,,6,280.2,0,288.1,0,283.4,0
+20220128,2,0,0,0,,6,281.7,0,292.4,0,285.6,0
+20220129,6,0,0,0,,6,281.4,0,292.9,0,285.7,0
+20220130,10,0,0,0,,6,281.6,0,292.2,0,284.9,0
+20220131,6.5,0,0,0,,6,280,0,286.5,0,281.6,0
+/
+    
