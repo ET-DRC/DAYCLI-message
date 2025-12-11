@@ -1,0 +1,1307 @@
+<?xml version="1.0"?>
+   <!-- Identification of Originating/Generating center (See commom code table C1 and C11 )-->
+   <!-- Sub-center of generating center (See common code C12)-->
+   <!-- HTEMP        !Highr of temperature sensor
+      HA=          !007030-HEIGHT OF STATION GROUND ABOVE MEAN SEA LEVEL
+      SMC_TEMP     !008095-SITING AND MEASUREMENT QUALITY CLASSFICATION FOR TEMPERATURE
+      SMC_PREC     !008096-SITING AND MEASUREMENT QUALITY CLASSIFICATION FOR PRECIPITAION
+      METHOD_TM    !008094-Method used to calculate the average daily temperature
+         time_difference !Time difference in minutes:  Local Meteorologica Time Zone - UTC (LMTZ-UTC)
+      !Use 0 in case of the use of UTC values
+      -->
+  <daycli>
+  <sec1 center=" 43" subcenter="255" year="2022" month="01" day="0" />
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220101"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220101T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20211231T1200-20220101T1200"
+      quality="0">   2.90</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20211231T0000-20220101T0000"
+      quality="0"> 296.16</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20211231T0000-20220101T0000"
+      quality="0"> 305.06</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20211231T0000-20220101T0000"
+      quality="0"> 299.06</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220102"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220102T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220101T1200-20220102T1200"
+      quality="0">   7.40</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220101T0000-20220102T0000"
+      quality="0"> 296.56</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220101T0000-20220102T0000"
+      quality="0"> 305.46</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220101T0000-20220102T0000"
+      quality="0"> 299.46</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220103"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220103T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220102T1200-20220103T1200"
+      quality="0">   6.00</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220102T0000-20220103T0000"
+      quality="0"> 295.96</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220102T0000-20220103T0000"
+      quality="0"> 301.56</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220102T0000-20220103T0000"
+      quality="0"> 297.86</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220104"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220104T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220103T1200-20220104T1200"
+      quality="0">   3.30</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220103T0000-20220104T0000"
+      quality="0"> 294.86</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220103T0000-20220104T0000"
+      quality="0"> 305.26</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220103T0000-20220104T0000"
+      quality="0"> 298.96</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220105"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220105T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220104T1200-20220105T1200"
+      quality="0">   1.40</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220104T0000-20220105T0000"
+      quality="0"> 295.96</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220104T0000-20220105T0000"
+      quality="0"> 304.66</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220104T0000-20220105T0000"
+      quality="0"> 299.56</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220106"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220106T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220105T1200-20220106T1200"
+      quality="0">   0.20</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220105T0000-20220106T0000"
+      quality="0"> 296.06</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220105T0000-20220106T0000"
+      quality="0"> 305.06</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220105T0000-20220106T0000"
+      quality="0"> 299.46</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220107"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220107T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220106T1200-20220107T1200"
+      quality="0">   0.10</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220106T0000-20220107T0000"
+      quality="0"> 296.46</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220106T0000-20220107T0000"
+      quality="0"> 304.86</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220106T0000-20220107T0000"
+      quality="0"> 300.06</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220108"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220108T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220107T1200-20220108T1200"
+      quality="0">   7.40</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220107T0000-20220108T0000"
+      quality="0"> 295.66</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220107T0000-20220108T0000"
+      quality="0"> 304.26</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220107T0000-20220108T0000"
+      quality="0"> 299.06</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220109"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220109T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220108T1200-20220109T1200"
+      quality="0">   3.80</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220108T0000-20220109T0000"
+      quality="0"> 295.36</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220108T0000-20220109T0000"
+      quality="0"> 299.86</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220108T0000-20220109T0000"
+      quality="0"> 297.76</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220110"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220110T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220109T1200-20220110T1200"
+      quality="0">   0.50</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220109T0000-20220110T0000"
+      quality="0"> 295.36</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220109T0000-20220110T0000"
+      quality="0"> 305.26</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220109T0000-20220110T0000"
+      quality="0"> 299.26</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220111"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220111T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220110T1200-20220111T1200"
+      quality="null">  16.60</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220110T0000-20220111T0000"
+      quality="null"> 295.56</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220110T0000-20220111T0000"
+      quality="null"> 303.86</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220110T0000-20220111T0000"
+      quality="null"> 298.86</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220112"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220112T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220111T1200-20220112T1200"
+      quality="null">   0.00</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220111T0000-20220112T0000"
+      quality="null"> 296.66</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220111T0000-20220112T0000"
+      quality="null"> 303.66</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220111T0000-20220112T0000"
+      quality="null"> 298.46</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220113"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220113T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220112T1200-20220113T1200"
+      quality="null">  38.30</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220112T0000-20220113T0000"
+      quality="null"> 294.36</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220112T0000-20220113T0000"
+      quality="null"> 305.26</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220112T0000-20220113T0000"
+      quality="null"> 298.86</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220114"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220114T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220113T1200-20220114T1200"
+      quality="null">   0.80</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220113T0000-20220114T0000"
+      quality="null"> 295.26</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220113T0000-20220114T0000"
+      quality="null"> 306.06</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220113T0000-20220114T0000"
+      quality="null"> 298.76</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220115"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220115T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220114T1200-20220115T1200"
+      quality="null">   1.40</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220114T0000-20220115T0000"
+      quality="null"> 295.36</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220114T0000-20220115T0000"
+      quality="null"> 305.96</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220114T0000-20220115T0000"
+      quality="null"> 298.96</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220116"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220116T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220115T1200-20220116T1200"
+      quality="null">  29.00</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220115T0000-20220116T0000"
+      quality="null"> 294.46</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220115T0000-20220116T0000"
+      quality="null"> 303.76</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220115T0000-20220116T0000"
+      quality="null"> 298.56</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220117"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220117T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220116T1200-20220117T1200"
+      quality="null">  12.40</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220116T0000-20220117T0000"
+      quality="null"> 295.16</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220116T0000-20220117T0000"
+      quality="null"> 304.86</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220116T0000-20220117T0000"
+      quality="null"> 299.46</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220118"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220118T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220117T1200-20220118T1200"
+      quality="null">  41.10</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220117T0000-20220118T0000"
+      quality="null"> 295.76</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220117T0000-20220118T0000"
+      quality="null"> 301.86</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220117T0000-20220118T0000"
+      quality="null"> 298.06</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220119"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220119T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220118T1200-20220119T1200"
+      quality="null">   5.00</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220118T0000-20220119T0000"
+      quality="null"> 295.16</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220118T0000-20220119T0000"
+      quality="null"> 305.86</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220118T0000-20220119T0000"
+      quality="null"> 298.66</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220120"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220120T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220119T1200-20220120T1200"
+      quality="null">  19.40</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220119T0000-20220120T0000"
+      quality="null"> 295.26</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220119T0000-20220120T0000"
+      quality="null"> 306.46</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220119T0000-20220120T0000"
+      quality="null"> 299.96</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220121"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220121T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220120T1200-20220121T1200"
+      quality="null">   0.00</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220120T0000-20220121T0000"
+      quality="null"> 295.86</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220120T0000-20220121T0000"
+      quality="null"> 307.06</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220120T0000-20220121T0000"
+      quality="null"> 300.06</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220122"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220122T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220121T1200-20220122T1200"
+      quality="null">   4.00</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220121T0000-20220122T0000"
+      quality="null"> 295.56</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220121T0000-20220122T0000"
+      quality="null"> 307.06</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220121T0000-20220122T0000"
+      quality="null"> 300.46</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220123"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220123T0000"
+      quality="5"></element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220124"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220124T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220123T1200-20220124T1200"
+      quality="null">   1.20</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220123T0000-20220124T0000"
+      quality="null"> 296.36</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220123T0000-20220124T0000"
+      quality="null"> 306.66</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220123T0000-20220124T0000"
+      quality="null"> 299.26</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220125"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220125T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220124T1200-20220125T1200"
+      quality="null">  25.10</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220124T0000-20220125T0000"
+      quality="null"> 297.36</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220124T0000-20220125T0000"
+      quality="null"> 306.66</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220124T0000-20220125T0000"
+      quality="null"> 299.76</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220126"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220126T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220125T1200-20220126T1200"
+      quality="null">  25.20</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220125T0000-20220126T0000"
+      quality="null"> 297.06</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220125T0000-20220126T0000"
+      quality="null"> 306.76</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220125T0000-20220126T0000"
+      quality="null"> 299.96</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220127"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220127T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220126T1200-20220127T1200"
+      quality="null">   4.00</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220126T0000-20220127T0000"
+      quality="null"> 296.96</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220126T0000-20220127T0000"
+      quality="null"> 303.76</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220126T0000-20220127T0000"
+      quality="null"> 298.86</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220128"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220128T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220127T1200-20220128T1200"
+      quality="null">   4.10</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220127T0000-20220128T0000"
+      quality="null"> 296.86</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220127T0000-20220128T0000"
+      quality="null"> 303.46</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220127T0000-20220128T0000"
+      quality="null"> 298.36</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220129"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220129T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220128T1200-20220129T1200"
+      quality="null">  27.70</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220128T0000-20220129T0000"
+      quality="null"> 296.06</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220128T0000-20220129T0000"
+      quality="null"> 300.06</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220128T0000-20220129T0000"
+      quality="null"> 297.56</element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220130"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220130T0000"
+      quality="5"></element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+  </subset>
+  <subset>
+    <weather_station
+      WIGOS="0-76-0-1501402000W82191"
+      WMO="82191"
+      Latitude="  -1.43583"
+      Longitude=" -48.43722"
+      ha="   7.10"
+      htemp="   1.50"
+      SMC_TEMP="007"
+      SMC_PREC="007"
+      METHOD_TM="003"/>
+    <Reference_date time_difference="000" date="20220131"/>
+    <element name="TSD"
+      fullname="Total snow deph"
+      unit="m"
+      time="20220131T0000"
+      quality="5"></element>
+    <element name="RR"
+      fullname="Total acumulated precipitation"
+      unit="Kg.m^-2"
+      period="20220130T1200-20220131T1200"
+      quality="null">   1.40</element>
+    <element name="DS"
+      fullname="Death of fresh snow"
+      unit="m"
+      period="null"
+      quality="5"></element>
+    <element name="Tn"
+      fullname="Minimum temperature"
+      unit="K"
+      period="20220130T0000-20220131T0000"
+      quality="null"> 296.66</element>
+    <element name="Tx"
+      fullname="Maximum temperature"
+      unit="K"
+      period="20220130T0000-20220131T0000"
+      quality="null"> 305.06</element>
+    <element name="Tm"
+      fullname="Mean temparature"
+      unit="K"
+      period="20220130T0000-20220131T0000"
+      quality="null"> 299.46</element>
+  </subset>
+  </daycli>
